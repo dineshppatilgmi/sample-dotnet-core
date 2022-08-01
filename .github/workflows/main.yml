@@ -1,0 +1,10 @@
+name: my workflow
+on: 
+  # run on all branches
+  push:
+jobs: 
+  Show_Msg:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: show message
+        run: echo "Running first message"
