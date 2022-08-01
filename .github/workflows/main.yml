@@ -12,6 +12,10 @@ jobs:
     steps:
     - name: checkout
       uses: actions/checkout@v3
+    - name: setup dot net core
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: '6.0.x'
     - name: list current directory
       run: |
          pwd
