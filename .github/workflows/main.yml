@@ -22,7 +22,7 @@ jobs:
       - build
     steps:
       - name: send notification
-        uses: dineshppatilgmi/ms-teams-notification@v1.1
+        uses: dineshppatilgmi/ms-teams-notification@v1.2
         with:
           webhook_uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}   
           message: "This is from custom actions created." 
