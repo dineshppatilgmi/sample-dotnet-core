@@ -18,6 +18,7 @@ jobs:
         run : dotnet build
   notify:
     runs-on: ubuntu-latest
+    if: always() # This is needed when we are 
     needs:
       - build
     steps:
